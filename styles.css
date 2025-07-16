@@ -1,0 +1,169 @@
+/* ---------------------------------------------
+   🌒 Dark Academia Theme — Color Palette & Fonts
+   --------------------------------------------- */
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&family=Great+Vibes&display=swap");
+
+/* Font Stack */
+:root {
+  --font-body: "Crimson Text", serif;
+  --font-heading: "Cinzel", serif;
+  --font-accent: "Great Vibes", cursive;
+}
+
+/* Color Palette */
+:root {
+  --color-bg: #0b0b0b; /* Oxford Black */
+  --color-surface: #2e2e2e; /* Charcoal Panels */
+  --color-text: #e3dac9; /* Bone / Parchment */
+  --color-accent: #8b5e3c; /* Saddle Brown */
+  --color-highlight: #642b36; /* Oxblood */
+  --color-gold: #b89b72; /* Antique Gold */
+  --color-green: #556b2f; /* Moss Green (optional accent) */
+}
+/* ====== Layout Structure ====== */
+.page-layout {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar: Google Calendar */
+.calendar-sidebar {
+  width: 19rem; /* fixed width for full week display */
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.calendar-sidebar.hidden {
+  opacity: 0;
+  visibility: hidden; /* visually hide but keep layout space */
+  pointer-events: none; /* disable interaction */
+}
+
+.calendar-sidebar iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px; /* match sidebar rounding */
+  opacity: 0.85;
+  filter: grayscale(20%) contrast(90%);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: transparent;
+  padding: 2rem 1rem;
+}
+
+/* ====== Global Reset & Typography ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    linear-gradient(rgba(30, 27, 24, 0.85), rgba(30, 27, 24, 0.85)),
+    url("assets/study.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #e3dac9; /* warm brown text */
+  font-family: var(--font-serif);
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 2rem 1rem;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-alt);
+  color: var(--highlight);
+  margin-bottom: 0.5rem;
+}
+
+p,
+li {
+  color: var(--text-muted);
+}
+
+/* ====== Layout Utilities ====== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ====== Header & Footer ====== */
+.site-header {
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.site-footer {
+  border-top: 1px solid var(--accent);
+  padding-top: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ====== Sections ====== */
+.section {
+  margin-bottom: 3rem;
+}
+
+.services-list {
+  list-style: square inside;
+  padding-left: 1rem;
+}
+.inline-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  cursor: pointer;
+  /* Updated filter to match #8b5e3c more closely */
+  filter: brightness(0) saturate(100%) invert(35%) sepia(44%) saturate(505%)
+    hue-rotate(2deg) brightness(90%) contrast(90%);
+  transition: filter 0.3s ease;
+}
+
+.inline-toggle-btn:hover {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(600%)
+    hue-rotate(10deg) brightness(100%) contrast(90%);
+}
+
+.inline-toggle-btn img {
+  width: 1.44em; /* 20% larger than 1.2em */
+  height: 1.44em;
+  display: inline-block;
+  pointer-events: none; /* ensures clicks hit the button, not the img */
+}
