@@ -31,17 +31,19 @@
 
 /* Sidebar: Google Calendar */
 .calendar-sidebar {
-  width: 19rem; /* fixed width for full week display */
-  transition: opacity 0.3s ease;
+  width: 19rem; /* your chosen width */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* disable interaction when hidden */
+}
+
+.calendar-sidebar.visible {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-.calendar-sidebar.hidden {
-  opacity: 0;
-  visibility: hidden; /* visually hide but keep layout space */
-  pointer-events: none; /* disable interaction */
-}
+
 
 .calendar-sidebar iframe {
   width: 100%;
