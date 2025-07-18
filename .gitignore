@@ -1,8 +1,7 @@
 # Node modules folder (huge, auto-installed)
 node_modules/
 
-# Build output folder (Eleventy output)
-_site/
+
 
 # System files
 .DS_Store
