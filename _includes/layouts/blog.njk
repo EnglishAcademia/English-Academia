@@ -1,0 +1,29 @@
+{% extends "layouts/layout.njk" %}
+
+{% block body_class %}blog-page{% endblock %}
+
+{% block content %}
+  <div id="blog-page-wrapper">
+
+    <!-- Banner at the top with glass effect -->
+    <header id="blog-header" class="banner-wrapper">
+  <div id="blog-banner" class="banner-glass-box">
+    <h1 id="blog-title" class="blog-header-title banner-text">From the Margin</h1>
+    <p>A quiet corner for curious minds</p>
+  </div>
+</header>
+
+
+    <!-- Blog post grid below the banner -->
+    <main id="blog-posts" class="posts-grid">
+      {% for post in collections.blog %}
+        <article id="post-{{ post.fileSlug }}" class="blog-post-card post-card">
+          <h2 class="post-title blog-post-title">{{ post.data.title }}</h2>
+          <p class="post-description blog-post-description">{{ post.data.description }}</p>
+          <a href="{{ post.url }}" class="post-readmore">Read More</a>
+        </article>
+      {% endfor %}
+    </main>
+
+  </div>
+{% endblock %}

@@ -1,10 +1,11 @@
 ---
-title: Test Post
+title: "Who vs Whom"
+description: "To who or to whom? That is the question — and the answer is easier than you think."
 date: 2025-07-18
-layout: layout.njk
+layout: layouts/post.njk
 ---
 
-If you’ve ever paused mid-sentence wondering whether to use _who_ or _whom_, you’re not alone. This pair has puzzled English speakers for centuries. It’s one of those grammar mysteries that seems simple but can twist your tongue and test your patience. Let’s break it down in a way that’s clear, practical, and maybe a little fun — like an office hours chat with a professor who really wants you to get it, but also doesn’t mind cracking a joke or two.
+If you’ve ever paused mid-sentence wondering whether to use _who_ or _whom_, you’re not alone. This pair has puzzled English speakers for centuries. It’s one of those grammar mysteries that seems simple but can twist your tongue and test your patience. Let’s break it down in a way that’s clear, practical, and maybe a little fun.
 
 ### Who and Whom: The Basics
 
