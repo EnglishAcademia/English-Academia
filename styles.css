@@ -1,0 +1,346 @@
+/* ---------------------------------------------
+   🌒 Dark Academia Theme — Color Palette & Fonts
+   --------------------------------------------- */
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&family=Great+Vibes&display=swap");
+
+/* CSS Variables for fonts, colors, and layout */
+:root {
+  --font-body: "Crimson Text", serif;
+  --font-heading: "Cinzel", serif;
+  --font-accent: "Great Vibes", cursive;
+  --max-width: 900px;
+  --color-bg: #0b0b0b; /* Oxford Black */
+  --color-surface: #2e2e2e; /* Charcoal Panels */
+  --color-text: #e3dac9; /* Bone / Parchment */
+  --color-accent: #8b5e3c; /* Saddle Brown */
+  --color-highlight: #642b36; /* Oxblood */
+  --color-gold: #b89b72; /* Antique Gold */
+  --color-green: #556b2f; /* Moss Green (optional accent) */
+}
+
+/* ====== Global Reset & Base Typography ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+a {
+  color: var(--color-highlight);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+p,
+li {
+  color: var(--color-text);
+}
+
+/* ====== Layout Wrappers and Page Structure ====== */
+#layout-wrapper {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#site-main {
+  flex: 1 0 auto; /* fill remaining space */
+}
+
+#site-footer {
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+/* ====== Global Full-Page Background Images with Blur and Darken ====== */
+body.main-page #layout-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/assets/study.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6) blur(2px);
+}
+
+body.blog-page #layout-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/assets/margin1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6) blur(2px);
+}
+
+body.post-page #layout-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/assets/notes2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6) blur(2px);
+}
+
+/* ====== Smoked Glass Containers ====== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background: rgba(46, 46, 46, 0.65); /* translucent charcoal */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====== Header Styling ====== */
+#site-header.container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+#site-header .site-title a {
+  color: var(--color-gold);
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+#site-header {
+  text-align: center;
+}
+
+.site-title {
+  font-family: var(--font-accent), cursive;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--color-text);
+  letter-spacing: 0.08rem;
+  margin-top: 0.5rem;
+}
+
+/* ====== Footer Styling ====== */
+#site-footer.container {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-accent);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+#footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+#footer-nav ul li a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Main Page Specific Styles ====== */
+#main-page-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem;
+}
+
+/* Remove local background overlays, handled globally now */
+#main-page-wrapper::before {
+  display: none;
+}
+
+/* Remove glass container style on main page */
+#main-page-wrapper > .container {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+/* Main page paragraph adjustments */
+#main-page-wrapper p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ====== Calendly Widget Styles ====== */
+.calendly-inline-widget {
+  width: 320px;
+  height: 500px;
+  max-width: 100%;
+}
+
+.global-calendly-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+#calendly-widget {
+  margin: 0 auto;
+}
+
+/* ====== Blog Page Styles ====== */
+.blog-page {
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.blog-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
+/* (Blog background image is set globally on body.blog-page::before) */
+/* ====== Banner Content Box ====== */
+.content-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#blog-banner.banner-glass-box {
+  max-width: var(--max-width);
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: rgba(46, 46, 46, 0.458); /* translucent charcoal */
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.banner-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem; /* adjust size as needed */
+  margin: 0;
+  color: var(--color-gold); /* or another accent color */
+}
+/*=====================
+  Posts grid
+  ====================*/
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1.5rem; /* vertical gap 1rem, horizontal 1.5rem */
+  padding: 1rem 0; /* optional padding around grid */
+}
+
+.blog-post-card {
+  background: rgba(46, 46, 46, 0.6); /* a bit darker glass effect */
+  padding: 1rem 1.25rem; /* left & right padding */
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space between title, desc, link */
+  color: var(--color-text);
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.post-description {
+  flex-grow: 1; /* so description takes available vertical space if needed */
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.post-readmore {
+  align-self: flex-start;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.post-readmore:hover {
+  text-decoration: underline;
+}
+.post-container.container {
+  max-width: calc(
+    100vw - 20rem
+  ); /* full viewport width minus 10rem both sides */
+  margin: 2rem auto 4rem; /* centered with vertical spacing */
+  padding: 2rem 3rem; /* comfortable padding inside */
+  background: rgba(46, 46, 46, 0.65); /* same translucent charcoal */
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  color: var(--color-text);
+  overflow: visible; /* ensure no scroll inside */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.main-section-wrapper {
+  margin-block: 5rem; /* Adjust as needed */
+}

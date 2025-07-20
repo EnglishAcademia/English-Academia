@@ -1,0 +1,5 @@
+# robots.txt for English Academia
+User-agent: *
+Disallow:
+
+Sitemap: https://englishacademia.github.io/English-Academia/sitemap.xml
