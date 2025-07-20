@@ -83,7 +83,7 @@ body.main-page #layout-wrapper::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/assets/study.png");
+  background-image: url("/English-Academia/assets/study.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ body.blog-page #layout-wrapper::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/assets/margin1.jpg");
+  background-image: url("/English-Academia/assets/margin1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ body.post-page #layout-wrapper::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/assets/notes2.jpg");
+  background-image: url("/English-Academia/assets/notes2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
