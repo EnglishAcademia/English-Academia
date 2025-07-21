@@ -3,3 +3,21 @@ User-agent: *
 Disallow:
 
 Sitemap: https://englishacademia.github.io/English-Academia/sitemap.xml
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+Allow: /blog.html
+Allow: /blog/
+

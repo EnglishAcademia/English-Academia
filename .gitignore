@@ -30,4 +30,6 @@ yarn-error.log*
 # Other temp files or caches
 .cache/
 _site/
+ae.py
 tools/
+Article-template.html
