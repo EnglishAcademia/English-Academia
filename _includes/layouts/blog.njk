@@ -19,7 +19,8 @@
         <article id="post-{{ post.fileSlug }}" class="blog-post-card post-card">
           <h2 class="post-title blog-post-title">{{ post.data.title }}</h2>
           <p class="post-description blog-post-description">{{ post.data.description }}</p>
-          <a href="{{ post.url }}" class="post-readmore">Read More</a>
+         <a href="{{ pathPrefix }}{{ post.url | safe }}" class="post-readmore">Read More</a>
+
         </article>
       {% endfor %}
     </main>
