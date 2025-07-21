@@ -33,3 +33,6 @@ _site/
 ae.py
 tools/
 Article-template.html
+Articles_src/
+Articles_out/
+!Articles_out/blog/

@@ -15,7 +15,7 @@
   --color-surface: #2e2e2e; /* Charcoal Panels */
   --color-text: #e3dac9; /* Bone / Parchment */
   --color-accent: #8b5e3c; /* Saddle Brown */
-  --color-highlight: #642b36; /* Oxblood */
+  --color-highlight: #652c37; /* Oxblood */
   --color-gold: #b89b72; /* Antique Gold */
   --color-green: #556b2f; /* Moss Green (optional accent) */
 }
@@ -450,4 +450,109 @@ footer a:hover {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 0.5rem;
+}
+/* Background and container for article page */
+.post-page {
+  font-family: "Arial", "Helvetica", sans-serif;
+  background: url("../assets/notes2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #222; /* your site-wide text color */
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Overlay with blur and dark tint for readability */
+.post-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* Navigation bar above article */
+.article-nav {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+}
+
+.article-nav a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.article-nav a:hover,
+.article-nav a:focus {
+  color: #007acc; /* subtle accent color on hover */
+  text-decoration: underline;
+}
+
+/* Main article container */
+.post-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 2.5rem 3rem;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Title */
+.post-container h1 {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #556b2f;
+}
+
+/* Date */
+.post-date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Article body text */
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e3dac9;
+}
+
+/* Basic content element spacing */
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.post-content a {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+.post-content a:hover,
+.post-content a:focus {
+  text-decoration: none;
 }
