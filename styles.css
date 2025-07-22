@@ -454,7 +454,8 @@ footer a:hover {
 /* Background and container for article page */
 .post-page {
   font-family: "Arial", "Helvetica", sans-serif;
-  background: url("../assets/notes2.jpg") no-repeat center center fixed;
+  background-image: url("/English-Academia/assets/notes2.jpg");
+
   background-size: cover;
   color: #222; /* your site-wide text color */
   min-height: 100vh;
