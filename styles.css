@@ -188,6 +188,9 @@ body.post-page #layout-wrapper::before {
   z-index: 1;
   padding: 2rem 1rem;
 }
+.section-text a {
+  color: #d7dab4; /* Moss Green */
+}
 
 /* Remove local overlays and glass on main page container */
 #main-page-wrapper::before,
@@ -373,7 +376,7 @@ body.post-page #layout-wrapper::before {
   max-width: calc(100vw - 20rem);
   margin: 2rem auto 4rem;
   padding: 2rem 3rem;
-  background: rgba(46, 46, 46, 0.65);
+  background: rgba(46, 46, 46, 0.459);
   backdrop-filter: blur(8px);
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -480,19 +483,21 @@ footer a:hover {
   z-index: -1;
 }
 
-/* Navigation bar above article */
+/* Navigation bar below article */
 .article-nav {
   width: 100%;
   max-width: 700px;
+  position: fixed;
+  bottom: 0;
   margin-bottom: 1.5rem;
   font-size: 1rem;
-  color: #222;
+  color: #8b5e3c;
   text-align: center;
   font-weight: 600;
 }
 
 .article-nav a {
-  color: #222;
+  color: #3e6539;
   text-decoration: none;
   margin: 0 0.5rem;
   transition: color 0.3s ease;
@@ -500,7 +505,7 @@ footer a:hover {
 
 .article-nav a:hover,
 .article-nav a:focus {
-  color: #007acc; /* subtle accent color on hover */
+  color: #cfc311; /* subtle accent color on hover */
   text-decoration: underline;
 }
 
