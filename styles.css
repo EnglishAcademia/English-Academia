@@ -475,8 +475,8 @@ footer a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(63, 62, 60, 0.4);
-  backdrop-filter: blur(6px);
+  background: rgba(63, 62, 60, 0.2);
+  backdrop-filter: blur(4px);
   z-index: -1;
 }
 
