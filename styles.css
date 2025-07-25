@@ -65,8 +65,8 @@ li {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  /*background-color: var(--color-bg);
+  color: var(--color-text);*/
 }
 
 #site-main {
@@ -372,11 +372,11 @@ body.post-page #layout-wrapper::before {
 }
 
 /* Post container for single post pages */
-.post-container.container {
+ .post-container.container {
   max-width: calc(100vw - 20rem);
   margin: 2rem auto 4rem;
   padding: 2rem 3rem;
-  background: rgba(46, 46, 46, 0.309);
+  background: rgba(46, 46, 46, 0.3);   /* translucent charcoal*/ 
   backdrop-filter: blur(8px);
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -385,6 +385,7 @@ body.post-page #layout-wrapper::before {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
 
 /* Main content section wrapper spacing */
 .main-section-wrapper {
