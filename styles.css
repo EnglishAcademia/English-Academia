@@ -118,7 +118,7 @@ body.post-page #layout-wrapper::before {
 .glass-box,
 .content-box,
 .blog-content-box {
-  background: rgba(46, 46, 46, 0.458); /* translucent charcoal */
+  background: rgba(46, 46, 46, 0.265); /* translucent charcoal */
   padding: 2rem 1.5rem;
   border-radius: 8px;
   backdrop-filter: blur(8px);
