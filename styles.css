@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: var(--color-highlight);
+  color: #556b2f;
   text-decoration: none;
 }
 a:hover {
@@ -188,9 +188,7 @@ body.post-page #layout-wrapper::before {
   z-index: 1;
   padding: 2rem 1rem;
 }
-.section-text a {
-  color: #d7dab4; /* Moss Green */
-}
+
 
 /* Remove local overlays and glass on main page container */
 #main-page-wrapper::before,
@@ -204,9 +202,21 @@ body.post-page #layout-wrapper::before {
 }
 
 /* Main page paragraphs */
-#main-page-wrapper p {
+/*#main-page-wrapper p {
   font-size: 1.2rem;
   line-height: 1.6;
+}*/
+#main-services {
+  max-width: 600px;       /* set a width for the block */
+  margin-left: auto;      /* center block horizontally */
+  margin-right: auto;
+  text-align: left;       /* keep text inside left-aligned */
+}
+#main-contact {
+  max-width: 600px;       /* set a width for the block */
+  margin-left: auto;      /* center block horizontally */
+  margin-right: auto;
+  text-align: left;       /* keep text inside left-aligned */
 }
 
 /* ====== Calendly Widget Styles ====== */
