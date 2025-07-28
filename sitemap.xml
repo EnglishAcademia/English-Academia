@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://EnglishAcademia.github.io/English-Academia/blog.html</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>http://localhost:8000/blog.html</loc>
+    <lastmod>2025-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://EnglishAcademia.github.io/English-Academia/blog/The-Grammar-Sandwich.html</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>http://localhost:8000/blog/The-Grammar-Sandwich.html</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:8000/blog/Who-vs-Whom.html</loc>
+    <lastmod>2025-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
