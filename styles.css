@@ -13,7 +13,7 @@
   --max-width: 900px;
   --color-bg: #0b0b0b; /* Oxford Black */
   --color-surface: #2e2e2e; /* Charcoal Panels */
-  --color-text: #e3dac9; /* Bone / Parchment */
+  --color-text: #e5d2af; /* Bone / Parchment */
   --color-accent: #8b5e3c; /* Saddle Brown */
   --color-highlight: #652c37; /* Oxblood */
   --color-gold: #b89b72; /* Antique Gold */
@@ -130,6 +130,31 @@ body.post-page #layout-wrapper::before {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#notification-row {
+  display: flex;
+  align-items: center;       /* vertically align with header height */
+  justify-content: space-between;
+  margin-bottom: 24px;       /* some spacing below notifications */
+}
+
+.notification-panel {
+  /* common styles */
+  font-size: 0.9rem;
+  color: var(--color-text);
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Right notification panel text aligned right */
+#notification-row > aside:nth-child(3) {
+  text-align: right;
+}
+
+
+.notification-spacer {
+  flex-grow: 1;              /* fills space between panels */
 }
 
 /* ====== Header Styling ====== */
@@ -386,7 +411,7 @@ body.post-page #layout-wrapper::before {
   max-width: calc(100vw - 20rem);
   margin: 2rem auto 4rem;
   padding: 2rem 3rem;
-  background: rgba(46, 46, 46, 0.3);   /* translucent charcoal*/ 
+  background: rgba(46, 46, 46, 0.656);   /* translucent charcoal*/ 
   backdrop-filter: blur(8px);
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -582,6 +607,44 @@ footer a:hover {
   opacity: 0.1; /* Low opacity for watermark effect */
   pointer-events: none; /* So it doesn't interfere with clicks */
   z-index: 10; /* Stays in back */
+}
+/* These might already exist, but just in case */
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header container */
+#site-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Tutors resource container */
+#resources-tutors {
+  margin-top: 1rem;
+}
+
+#resources-tutors ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#resources-tutors li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
 
 /*.GlassContainer {
