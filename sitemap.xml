@@ -3,25 +3,31 @@
 
   <url>
     <loc>http://localhost:8000/blog.html</loc>
-    <lastmod>2025-08-06</lastmod>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:8000/blog/Sentence-structure.html</loc>
-    <lastmod>2025-08-06</lastmod>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:8000/blog/The-Grammar-Sandwich.html</loc>
-    <lastmod>2025-08-06</lastmod>
+    <lastmod>2026-01-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:8000/blog/Verb-Flavors.html</loc>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:8000/blog/Who-vs-Whom.html</loc>
-    <lastmod>2025-08-06</lastmod>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

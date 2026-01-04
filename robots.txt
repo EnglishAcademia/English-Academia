@@ -58,6 +58,18 @@ User-agent: *
 User-agent: *
 
 User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
+
+User-agent: *
 Allow: /blog.html
 Allow: /blog/
 

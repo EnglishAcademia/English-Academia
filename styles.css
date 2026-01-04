@@ -113,7 +113,11 @@ body.post-page #layout-wrapper::before {
   background-repeat: no-repeat;
   filter: brightness(0.6) blur(2px);
 }
-
+body.main-page {
+  font-size: 1.5rem;  /* 18px equivalent if root is 16px */
+  line-height: 1.6;
+}
+body
 /* ====== Glass Box Consistent Styling (Used on blog-content-box & others) ====== */
 .glass-box,
 .content-box,
@@ -357,12 +361,26 @@ body.post-page #layout-wrapper::before {
 }
 
 /* Blog Footer */
-#blog-footer.blog-content-box {
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
+/* Improved Blog Footer */
+#blog-footer.glass-box.content-box {
+  padding: 1.5rem 2rem;              /* Slightly more padding for better spacing */
+  font-size: 1.125rem !important;                /* A bit larger for readability */
   text-align: center;
   margin-top: 3rem;
+  
+  background: rgba(46, 46, 46, 0.708) !important; /* Slightly more opaque for stronger glass effect */
+  backdrop-filter: blur(8px);         /* Match the blur of other glass boxes */
+  -webkit-backdrop-filter: blur(8px); /* For Safari support */
+  
+  border-radius: 8px;                /* Rounded corners matching other boxes */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Consistent shadow */
+  color: var(--color-text);         /* Ensure text color matches */
+  
+  max-width: var(--max-width);       /* Keep consistent max width */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* Posts grid utility classes */
 .posts-grid {
@@ -526,8 +544,8 @@ footer a:hover {
   position: fixed;
   bottom: 0;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: #8b5e3c;
+  font-size: 1.5rem;
+  color: #0117577b;
   text-align: center;
   font-weight: 600;
 }
@@ -610,10 +628,10 @@ footer a:hover {
 }
 /* These might already exist, but just in case */
 .glass-box {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(32, 32, 32, 0.424);
   border-radius: 12px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
   padding: 2rem;
   margin-bottom: 2rem;
 }
